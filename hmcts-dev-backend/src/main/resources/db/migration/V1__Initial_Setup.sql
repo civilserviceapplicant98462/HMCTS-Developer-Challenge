@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS Task (
+   id SERIAL PRIMARY KEY,
+   title VARCHAR NOT NULL,
+   task_description VARCHAR,
+   importance VARCHAR,
+   due TIMESTAMP WITHOUT TIME ZONE,
+   completed BOOLEAN DEFAULT FALSE
+);
